@@ -1,19 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
 body {
-    background-color: darkblue;
-    height: 100vh;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("schoolroom.jpg");
+    background-size: cover;
+    max-height: 100vh;
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
 }
+
 .container {
-    background-image: url("schoolroom.jpg");
-    background-size: fill;
-    width: 50%;
-    height: 90%;
-    margin: 0 auto;
-    padding: 0;
+    background: white;
+    max-width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
     
 }
+
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -38,9 +48,13 @@ button {
 }
 
 #increment-btn {
-    background: darkred;
+    background: #2C2891;
 }
 
 #save-btn {
-    background: darkgreen;
+    background: #1C7947;
+}
+
+#save-el {
+    font-weight: bold;
 }
